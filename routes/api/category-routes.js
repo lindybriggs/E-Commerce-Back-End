@@ -41,7 +41,9 @@ router.post('/', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-
+// //////////////////////////////////////////
+// Below is alternative way / what's "under the hood" with async/await
+// /////////////////////////////////////////
   // Category.create(req.body)
   //   .then(categoryData => { res.json(categoryData) })
   //   .catch(err => res.status(500).json(err))
